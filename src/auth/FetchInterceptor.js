@@ -22,6 +22,9 @@ service.interceptors.request.use(config => {
     config.headers[TOKEN_PAYLOAD_KEY] = jwtToken
   }
 
+  // TODO: убрать
+	return config;
+  
   if (!jwtToken && !config.headers[PUBLIC_REQUEST_KEY]) {
 		history.push(ENTRY_ROUTE)
 		window.location.reload();
