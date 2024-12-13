@@ -99,7 +99,6 @@ const CustomersList = () => {
     return (
         <div>
             <Table columns={tableColumns} dataSource={data} rowKey='id' loading={loading}/>
-            {/* <InfiniteCanvasFabric></InfiniteCanvasFabric> */}
         </div>
     )
 }
