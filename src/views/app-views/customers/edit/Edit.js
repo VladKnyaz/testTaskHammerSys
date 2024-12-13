@@ -9,7 +9,7 @@ const EditCustomer = ({location}) => {
     if (!location?.state?.user) return history.push(APP_PREFIX_PATH);
     const user = location.state.user;
   
-    const onFinish = values => {
+    const onFinish = () => {
       const key = 'updatable';
       message.loading({ content: 'Updating...', key });
       setTimeout(() => {
